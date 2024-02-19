@@ -1,4 +1,4 @@
-@font-face {
+ /* @font-face {
   font-family: 'PT_Sans';
   src: url(fonts/ptsans-400.woff2);
   font-style: normal;
@@ -13,11 +13,11 @@
 
 .html, body{
  font-family: 'PT_Sans', sans-serif;
- width: 1280px;
+ width: 1200px;
  background-color: #F2F2F2;
  margin-left: auto;
  margin-right: auto;
- border: 1px solid #000000; /* рамка для наглядности */
+
 }
 
 .main-header{
@@ -192,7 +192,7 @@ text-decoration: none;
 
 .logo{
 
-}
+}   */
 
 
 
