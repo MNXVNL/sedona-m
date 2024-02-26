@@ -1,17 +1,18 @@
  @font-face {
   font-family: 'PT Sans';
-  src: url(/fonts/ptsans-400.woff2);
+  src: url(../fonts/ptsans-400.woff2);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url(/fonts/ptsans-700.woff2);
+  src: url(../fonts/ptsans-700.woff2);
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
+
 body{
   background: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
@@ -34,6 +35,24 @@ body{
   text-decoration: none;
 }
 
+.navigation-search{
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
+.navigation-favorites{
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/favorite.svg);
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
+
+
 .navigation-button{
   width: 160px;
   height: 37px;
@@ -54,7 +73,7 @@ body{
 .hero{
   width: 1200px;
   height: 485px;
-  background-image: url(/images/background/header_background.jpg);
+  background-image: url(/images/background/header-background.jpg);
   background-color: #83B3D333;
   background-repeat: no-repeat;
 }
@@ -167,7 +186,7 @@ text-align: center;
   width: 1200px;
   height: 411px;
   background-color: #83B3D333;
-  background-image: url(/images/background/subscribe_background.jpg);
+  background-image: url(/images/background/subscribe-background.jpg);
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -219,4 +238,53 @@ text-align: center;
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+}
+
+
+
+/* каталог */
+
+.filter-content{
+  width: 1200px;
+  height: 403px;
+  background-color: #83B3D333;
+  background-image: url(../images/background/background-inner.jpg);
+  background-repeat: no-repeat;
+}
+
+.inner-header-title{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item{
+  color: #FFFFFF;
+}
+.hotel{
+  font-weight: 400;
+}
+
+/* как поменять цвет иконки? */
+.breadcrumbs-link img{
+  color: #FFFFFF;
+}
+
+
+
+.subscribe-inner{
+  width: 1200px;
+  height: 411px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.subscribe-title-inner{
+  color: #000000;
+}
+
+.subscribe-text-inner{
+  color: #000000;
 }
