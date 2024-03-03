@@ -15,15 +15,16 @@
 
 body{
   width: 1200px;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin: 0;
 }
 
-.main-header{
-  background-color: #FFFFFF;
+.navigation-list{
+  list-style-type: none;
 }
 
 .navigation-link{
@@ -80,7 +81,6 @@ body{
 
 .footer-hero{
   height: 282px;
-  background-color: #FFFFFF;
   text-align: center;
 }
 
@@ -96,6 +96,10 @@ body{
   color: #333333;
 }
 
+.advantages-list{
+  list-style-type: none;
+}
+
 .advantages-item{
   width: 400px;
   height: 384px;
@@ -108,9 +112,17 @@ body{
   text-transform: uppercase;
 }
 
+.advantages-text{
+  color: #333333;
+}
+
 .blue{
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.blue .advantages-text{
+  color: #FFFFFF;
 }
 
 .lightblue{
@@ -137,7 +149,6 @@ body{
 
 .search{
 height: 417px;
-background-color: #FFFFFF;
 text-align: center;
 }
 
@@ -215,7 +226,26 @@ text-align: center;
 
 .main-footer{
   width: 1200px;
-  background-color: #FFFFFF;
+}
+
+.footer-list{
+  list-style-type: none;
+}
+
+.footer-item a{           /* по хорошему тут указать общий размер для всех иконок социальных сетей,*/
+  width: 20px;           /*  но в макете размеры все разные, получатеся для каждй иконки отдельно прописывать? */
+}
+
+.button-vk{
+  background-image: url(../images/social-item/Vector-VK.svg) no-repeat;
+}
+
+.button-facebook{
+  background-image: url(../images/social-item/Vector-facebook.svg) no-repeat;
+}
+
+.button-youtube{
+  background-image: url(../images/social-item/Vector-youtube.svg) no-repeat;
 }
 
 .footer-tel{
@@ -247,8 +277,13 @@ text-align: center;
   color: #FFFFFF;
 }
 
+.breadcrumbs{
+  list-style-type: none;
+}
+
 .breadcrumbs-item{      /*    как поменять цвет  svg иконки?? */
   color: #FFFFFF;
+  font-size: 16px;
 }
 
 .filter-title{
@@ -256,6 +291,10 @@ text-align: center;
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
+}
+
+.filter-list{
+  list-style-type: none;
 }
 
 .control{
@@ -278,8 +317,8 @@ text-align: center;
   text-align: center;
 }
 
-.catalog{                               /*  2  секция   */
-  background-color: #FFFFFF;
+.catalog-list{                               /*  2  секция   */
+  list-style-type: none;
 }
 
 .sorting-title{
@@ -357,6 +396,10 @@ text-align: center;
   text-align: center;
 }
 
+.pagination-list{
+  list-style-type: none;
+}
+
 .pagination-link{
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -389,7 +432,6 @@ text-align: center;
 .subscribe-inner{                             /*  3 секция   Подпишитесь на расылку  */
   width: 1200px;
   height: 411px;
-  background-color: #FFFFFF;
   text-align: center;
 }
 
