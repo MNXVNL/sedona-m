@@ -21,10 +21,13 @@ body{
   line-height: 21px;
   color: #000000;
   margin: 0;
+  padding: 0;
 }
 
 .navigation-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link{
@@ -33,6 +36,13 @@ body{
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.emphasized{
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }
 
 .navigation-search{
@@ -88,16 +98,22 @@ body{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-hero p{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item{
@@ -110,41 +126,49 @@ body{
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-text{
+  width: 230px;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
-.blue{
+.first-item,
+.seven-item{
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.blue .advantages-text{
+.first-item .advantages-text,
+.seven-item .advantages-text{
   color: #FFFFFF;
 }
 
-.lightblue{
+.three-item{
+  background:#83B3D31F url(../images/advantages/home.svg) no-repeat center 81px;
+}
+
+.four-item{
+  background: url(../images/advantages/food.svg) no-repeat center 80px;
+}
+
+.five-item{
+  background: #83B3D31F url(../images/advantages/present.svg) no-repeat center 78px;
+}
+
+.eight-item,
+.ten-item{
   color: #000000;
   background-color: #83B3D31F;
 }
 
-.darkblue{
+.nine-item{
   color: #000000;
   background-color: #83B3D333;
-}
-
-.home{
-  background:#83B3D31F url(../images/advantages/home.svg) no-repeat center 81px;
-}
-
-.food{
-  background: url(../images/advantages/food.svg) no-repeat center 80px;
-}
-
-.present{
-  background: #83B3D31F url(../images/advantages/present.svg) no-repeat center 78px;
 }
 
 .search{
@@ -156,6 +180,8 @@ text-align: center;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
   padding-top: 91px;
 }
 
@@ -163,6 +189,8 @@ text-align: center;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .search-button{
@@ -177,6 +205,8 @@ text-align: center;
   height: 60px;
   border-style: none;
   border-radius: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe{
@@ -192,6 +222,8 @@ text-align: center;
   line-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
   padding-top: 94px;
 }
 
@@ -199,6 +231,8 @@ text-align: center;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .subscribe-field{
@@ -207,6 +241,14 @@ text-align: center;
   height: 60px;
   border-radius: 10px 0 0 10px;
   border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-field::placeholder{
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .subscribe-button{
@@ -222,6 +264,8 @@ text-align: center;
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer{
@@ -230,6 +274,8 @@ text-align: center;
 
 .footer-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-item a{           /* по хорошему тут указать общий размер для всех иконок социальных сетей,*/
@@ -275,13 +321,15 @@ text-align: center;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs{
   list-style-type: none;
 }
 
-.breadcrumbs-item{      /*    как поменять цвет  svg иконки?? */
+.breadcrumbs-item{
   color: #FFFFFF;
   font-size: 16px;
 }
@@ -291,14 +339,36 @@ text-align: center;
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-infra{
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .filter-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .control{
   color: #FFFFFF;
+}
+
+.filter-type{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-price{
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .filter-button-apply{
@@ -317,14 +387,22 @@ text-align: center;
   text-align: center;
 }
 
-.catalog-list{                               /*  2  секция   */
-  list-style-type: none;
+.catalog{                                 /*  2  секция   */
+  height: 1212px;
 }
 
 .sorting-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .select{
@@ -332,6 +410,7 @@ text-align: center;
   border-radius: 4px;
   width: 290px;
   height: 49px;
+
 }
 
 .select option{
@@ -343,10 +422,14 @@ text-align: center;
 .card-title{
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  padding: 0;
 }
 
 .card-hotel{
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .card-price{
@@ -398,6 +481,8 @@ text-align: center;
 
 .pagination-list{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link{
@@ -410,7 +495,7 @@ text-align: center;
   text-align: center;
 }
 
-.first{
+.pagination-first{
   background-color: #F2F2F2;
   color: #000000;
 }
@@ -430,7 +515,6 @@ text-align: center;
 }
 
 .subscribe-inner{                             /*  3 секция   Подпишитесь на расылку  */
-  width: 1200px;
   height: 411px;
   text-align: center;
 }
