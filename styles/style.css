@@ -13,21 +13,32 @@
   font-display: swap;
 }
 
-body{
-  width: 1200px;
+html{
   background-color: #FFFFFF;
+}
+
+body{
+  width: 1280px;
+  background-color: #F2F2F2;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
+
+.main-header{
+  width: 1200px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  }
 
 .navigation-list{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .navigation-link{
@@ -76,11 +87,18 @@ body{
   text-decoration: none;
 }
 
+.main-page{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  /* box-shadow: 10px 10px 30px #E6E6E6, */
+  /* -5px 5px 50px #E6E6E6; */
+}
+
 .hero{
   height: 485px;
-  background-image: url(../images/background/header-background.jpg);
-  background-color: #83B3D333;
-  background-repeat: no-repeat;
+  background: url(../images/background/header-decoration.svg) no-repeat center bottom,
+  #83B3D333 url(../images/background/header-background.jpg) no-repeat;
 }
 
 .hero-logo{
@@ -215,6 +233,7 @@ text-align: center;
   background-image: url(/images/background/subscribe-background.jpg);
   background-repeat: no-repeat;
   text-align: center;
+  /* border-bottom: 1px solid #E6E6E6; */
 }
 
 .subscribe-title{
@@ -270,6 +289,8 @@ text-align: center;
 
 .main-footer{
   width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 .footer-list{
