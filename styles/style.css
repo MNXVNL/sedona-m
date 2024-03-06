@@ -1,0 +1,549 @@
+ @font-face {
+  font-family: 'PT Sans';
+  src: url(../fonts/ptsans-400.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url(../fonts/ptsans-700.woff2);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+html{
+  background-color: #FFFFFF;
+}
+
+body{
+  width: 1280px;
+  background-color: #F2F2F2;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header{
+  width: 1200px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  }
+
+.navigation-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation-link{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.emphasized{
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
+
+.navigation-search{
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-favorites{
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/favorite.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-button{
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #756157;
+  text-align: center;
+}
+
+.navigation-button a{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-page{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  /* box-shadow: 10px 10px 30px #E6E6E6, */
+  /* -5px 5px 50px #E6E6E6; */
+}
+
+.hero{
+  height: 485px;
+  background: url(../images/background/header-decoration.svg) no-repeat center bottom,
+  #83B3D333 url(../images/background/header-background.jpg) no-repeat;
+}
+
+.hero-logo{
+  margin-left: 371px;
+  margin-right: 371px;
+  margin-top: 51px;
+}
+
+.footer-hero{
+  height: 282px;
+  text-align: center;
+}
+
+.footer-hero h1{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-hero p{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item{
+  width: 400px;
+  height: 384px;
+  text-align: center;
+}
+
+.advantages-title{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-text{
+  width: 230px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.first-item,
+.seven-item{
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.first-item .advantages-text,
+.seven-item .advantages-text{
+  color: #FFFFFF;
+}
+
+.three-item{
+  background:#83B3D31F url(../images/advantages/home.svg) no-repeat center 81px;
+}
+
+.four-item{
+  background: url(../images/advantages/food.svg) no-repeat center 80px;
+}
+
+.five-item{
+  background: #83B3D31F url(../images/advantages/present.svg) no-repeat center 78px;
+}
+
+.eight-item,
+.ten-item{
+  color: #000000;
+  background-color: #83B3D31F;
+}
+
+.nine-item{
+  color: #000000;
+  background-color: #83B3D333;
+}
+
+.search{
+height: 417px;
+text-align: center;
+}
+
+.search h2{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 91px;
+}
+
+.search p{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.search-button{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #756157;
+  width: 574px;
+  height: 60px;
+  border-style: none;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe{
+  height: 411px;
+  background-color: #83B3D333;
+  background-image: url(/images/background/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  /* border-bottom: 1px solid #E6E6E6; */
+}
+
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-top: 94px;
+}
+
+.subscribe-text{
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-field{
+  background-color: #F2F2F2;
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0 0 10px;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-field::placeholder{
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.subscribe-button{
+  background-color: #82B3D3;
+  width: 200px;
+  height: 60px;
+  border-radius: 0 10px 10px 0;
+  border-style: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.footer-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item a{           /* по хорошему тут указать общий размер для всех иконок социальных сетей,*/
+  width: 20px;           /*  но в макете размеры все разные, получатеся для каждй иконки отдельно прописывать? */
+}
+
+.button-vk{
+  background-image: url(../images/social-item/Vector-VK.svg) no-repeat;
+}
+
+.button-facebook{
+  background-image: url(../images/social-item/Vector-facebook.svg) no-repeat;
+}
+
+.button-youtube{
+  background-image: url(../images/social-item/Vector-youtube.svg) no-repeat;
+}
+
+.footer-tel{
+  text-align: center;
+}
+
+.number-tel{
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+
+
+                                       /* каталог */
+
+.filter-content{                       /*  1  секция   */
+  width: 1200px;
+  height: 403px;
+  background-color: #83B3D333;
+  background-image: url(../images/background/background-inner.jpg);
+  background-repeat: no-repeat;
+}
+
+.inner-header-title{
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs{
+  list-style-type: none;
+}
+
+.breadcrumbs-item{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.filter-title{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-infra{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.control{
+  color: #FFFFFF;
+}
+
+.filter-type{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-price{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-button-apply{
+  background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.filter-button-reset{
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* .catalog{                                  2  секция
+  height: 1212px;
+}*/
+
+.sorting-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select{
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 290px;
+  height: 49px;
+
+}
+
+.select option{
+  font-size: 18px;    /*  непонятки с размером шрифта, меняю в CSS в браузере ничего не происходит */
+  line-height: 21px;
+  color: #333333;
+}
+
+.card-title{
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-hotel{
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.card-price{
+  color: #333333;
+}
+
+.card-button{
+  background-color: #756157;
+  color: #FFFFFF;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-button-favorites{
+  background-color: #82B3D3;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  border-style: none;
+  color: #FFFFFF;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-stars{
+  background-image: url(../images/icons/star.svg);  /*  как сделать несколько звезд? */
+  background-repeat: no-repeat;
+}
+
+.card-rating{
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 140px;
+  border-radius: 4px;
+  border-style: none;
+  color: #333333;
+  line-height: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagination-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link{
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pagination-first{
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-text{
+  color: #333333;
+}
+
+.pagination-select{
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+  width: 160px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.subscribe-inner{                             /*  3 секция   Подпишитесь на расылку  */
+  height: 411px;
+  text-align: center;
+}
+
+.subscribe-title-inner{
+  color: #000000;
+}
+
+.subscribe-text-inner{
+  color: #000000;
+}
