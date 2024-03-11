@@ -322,7 +322,7 @@ body{
   width: 600px;
   height: 60px;
   border-radius: 10px 0 0 10px;
-  border-style: none;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -338,7 +338,7 @@ body{
   width: 200px;
   height: 60px;
   border-radius: 0 10px 10px 0;
-  border-style: none;
+  border: none;
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -502,7 +502,14 @@ body{
 }
 
 .catalog{                               /*    2  секция*/
+  width: 1200px;
   background-color: #FFFFFF;
+}
+
+.sorting{
+  width: 1057px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .sorting-title{
@@ -543,6 +550,11 @@ body{
   font-size: 18px;    /*  непонятки с размером шрифта, меняю в CSS в браузере ничего не происходит */
   line-height: 21px;
   color: #333333;
+}
+
+.catalog-hotel{
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .card-title{
@@ -587,11 +599,6 @@ body{
   text-align: center;
 }
 
-.card-stars{
-  background-image: url(../images/icons/star.svg);  /*  как сделать несколько звезд? */
-  background-repeat: no-repeat;
-}
-
 .card-rating{
   background-color: #F2F2F2;
   height: 37px;
@@ -607,6 +614,7 @@ body{
 
 .pagination{
   width: 1056px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
