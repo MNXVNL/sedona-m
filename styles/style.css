@@ -38,9 +38,14 @@ body{
 
 .main-header{
   width: 1200px;
-  min-height: 70px;
+  height: 70px;
   margin: 0 auto -5px;
   background-color: #FFFFFF;
+}
+
+.navigation-header-logo{
+  position: relative;
+  z-index: 1;
 }
 
 .navigation-container{
@@ -81,7 +86,9 @@ body{
   text-decoration: underline;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
+  text-underline-offset: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation-search{
@@ -176,6 +183,26 @@ body{
   text-align: center;
 }
 
+.advantages-content{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+
+.advantages-content-more{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
 .advantages-title{
   font-size: 24px;
   line-height: 28px;
@@ -185,10 +212,13 @@ body{
 }
 
 .advantages-text{
-  width: 230px;
   color: #333333;
   margin: 0;
   padding: 0;
+}
+
+.advantages-image{
+  display: block;
 }
 
 .first-item,
@@ -202,26 +232,18 @@ body{
   color: #FFFFFF;
 }
 
-.three-item{
-  background:#83B3D31F url(../images/advantages/home.svg) no-repeat center 81px;
-}
-
 .four-item{
-  background: url(../images/advantages/food.svg) no-repeat center 80px;
+  background-color: #FFFFFF;
 }
 
-.five-item{
-  background: #83B3D31F url(../images/advantages/present.svg) no-repeat center 78px;
-}
-
+.three-item,
+.five-item,
 .eight-item,
 .ten-item{
-  color: #000000;
   background-color: #83B3D31F;
 }
 
 .nine-item{
-  color: #000000;
   background-color: #83B3D333;
 }
 
@@ -651,4 +673,10 @@ body{
 
 .subscribe-text-inner{
   color: #000000;
+}
+
+
+.visually-hidden{
+  background-color: crimson;
+
 }
