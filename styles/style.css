@@ -109,17 +109,13 @@ body{
   width: 160px;
   height: 37px;
   border-radius: 4px;
+  border: none;
   background-color: #756157;
-  text-align: center;
-}
-
-.navigation-button a{
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .main-page{
@@ -274,8 +270,7 @@ body{
   display: block;
   width: 574px;
   height: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0;
   border-style: none;
   border-radius: 4px;
@@ -303,9 +298,7 @@ body{
   color: #FFFFFF;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  padding-top: 94px;
-  padding-bottom: 29px;
+  padding: 94px 0 29px;
 }
 
 .subscribe-text{
@@ -315,6 +308,11 @@ body{
   margin: 0;
   padding: 0;
   padding-bottom: 46px;
+}
+
+.subscribe-form{
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-field{
