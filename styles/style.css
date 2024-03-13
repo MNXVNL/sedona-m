@@ -329,6 +329,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding-left: 22px;
 }
 
 .subscribe-button{
@@ -518,24 +519,6 @@ body{
   padding: 0;
 }
 
-.catalog-list{
-  width: 1056px;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 18px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-item{
-  box-sizing: border-box;
-  width: 340px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 .select{
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -555,11 +538,36 @@ body{
   margin: 0 auto;
 }
 
+.catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item{
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image{
+  display: block;
+}
+
 .card-title{
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  padding: 0;
+}
+
+.card-title a{
+  text-decoration: none;
+  color: #000000;
 }
 
 .card-hotel{
