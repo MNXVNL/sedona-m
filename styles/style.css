@@ -67,24 +67,23 @@ body{
 }
 
 .navigation-list{
-  width: 390px;
+  width: 500px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navigation-item{
-  margin: 0;
-}
-
 .navigation-user{
-  width: 264px;
+  width: 300px;
   margin-left: auto;
+  justify-content: end;
 }
 
 .navigation-link{
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -105,15 +104,19 @@ body{
 }
 
 .navigation-search{
-  width: 18px;
-  height: 18px;
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 23px 12px;
   background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
 }
 
 .navigation-favorites{
-  width: 20px;
-  height: 20px;
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 23px 12px;
   background-image: url(../images/icons/favorite.svg);
   background-repeat: no-repeat;
 }
@@ -129,7 +132,9 @@ body{
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 0;
+  margin-top:14px;
+  margin-bottom: 14px;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -165,16 +170,13 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  padding-bottom: 31px;
 }
 
 .footer-hero p{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 0;
-  padding: 0;
+  margin: 31px 0 0;
 }
 
 .advantages{
@@ -200,8 +202,7 @@ body{
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 92px;
+  margin: 92px auto 0;
 }
 
 .advantages-content-more{
@@ -210,8 +211,7 @@ body{
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 80px;
+  margin: 80px auto 0;
 }
 
 .advantages-title{
@@ -328,6 +328,7 @@ body{
 .subscribe-form{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribe-field{
@@ -366,7 +367,6 @@ body{
 
 .main-footer{
   width: 1200px;
-  min-height: 120px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -377,39 +377,41 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-.footer-social{
-  width: 142px;
+  padding: 40px 0 30px;
 }
 
 .footer-list{
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-item a{           /* по хорошему тут указать общий размер для всех иконок социальных сетей,*/
-  width: 20px;           /*  но в макете размеры все разные, получатеся для каждй иконки отдельно прописывать? */
-}
-
 .button-vk{
-  background-image: url(../images/social-item/Vector-VK.svg) no-repeat;
+  display: block;
+  min-width: 24px;
+  min-height: 14px;
+  margin: 0 10px;
+  background: url(../images/social-item/Vector-VK.svg) no-repeat center center;
 }
 
 .button-facebook{
-  background-image: url(../images/social-item/Vector-facebook.svg) no-repeat;
+  display: block;
+  min-width: 18px;
+  min-height: 16px;
+  margin: 0 10px;
+  background: url(../images/social-item/Vector-facebook.svg) no-repeat center center;
 }
 
 .button-youtube{
-  background-image: url(../images/social-item/Vector-youtube.svg) no-repeat;
-}
-
-.footer-tel{
-  width: 720px;
-  text-align: center;
+  display: block;
+  min-width: 22px;
+  min-height: 17px;
+  margin: 0 10px;
+  background: url(../images/social-item/Vector-youtube.svg) no-repeat center center;
 }
 
 .number-tel{
@@ -419,8 +421,11 @@ body{
   text-decoration: none;
 }
 
-.footer-logo{
+.footer-logo-link{
+  display: block;
   width: 115px;
+  height: 33px;
+  margin-left: 50px;
 }
 
 
@@ -702,10 +707,4 @@ body{
 
 .subscribe-text-inner{
   color: #000000;
-}
-
-
-.visually-hidden{
-  background-color: crimson;
-
 }
