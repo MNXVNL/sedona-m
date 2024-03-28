@@ -1,10 +1,11 @@
- @font-face {
+@font-face {
   font-family: 'PT Sans';
   src: url(../fonts/ptsans-400.woff2);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'PT Sans';
   src: url(../fonts/ptsans-700.woff2);
@@ -67,7 +68,6 @@ body{
 }
 
 .navigation-list{
-  width: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -77,9 +77,14 @@ body{
 }
 
 .navigation-user{
-  width: 300px;
-  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
 .navigation-link{
@@ -103,29 +108,26 @@ body{
   z-index: 1;
 }
 
-.navigation-search{
+.navigation-user-link{
   display: block;
   min-width: 20px;
   min-height: 20px;
   padding: 23px 12px;
-  background-image: url(../images/icons/search.svg);
-  background-repeat: no-repeat;
+}
+
+.navigation-search{
+  background: url(../images/icons/search.svg) no-repeat center center;
 }
 
 .navigation-favorites{
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-  padding: 23px 12px;
-  background-image: url(../images/icons/favorite.svg);
-  background-repeat: no-repeat;
+  background: url(../images/icons/favorite.svg) no-repeat center center;
 }
 
 .navigation-button{
   width: 160px;
   height: 37px;
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
   background-color: #756157;
   font-size: 16px;
   line-height: 20px;
@@ -395,7 +397,7 @@ body{
   min-width: 24px;
   min-height: 14px;
   margin: 0 10px;
-  background: url(../images/social-item/Vector-VK.svg) no-repeat center center;
+  background: url(../images/social-item/VK.svg) no-repeat center center;
 }
 
 .button-facebook{
@@ -403,7 +405,7 @@ body{
   min-width: 18px;
   min-height: 16px;
   margin: 0 10px;
-  background: url(../images/social-item/Vector-facebook.svg) no-repeat center center;
+  background: url(../images/social-item/Facebook.svg) no-repeat center center;
 }
 
 .button-youtube{
@@ -411,7 +413,7 @@ body{
   min-width: 22px;
   min-height: 17px;
   margin: 0 10px;
-  background: url(../images/social-item/Vector-youtube.svg) no-repeat center center;
+  background: url(../images/social-item/YouTube.svg) no-repeat center center;
 }
 
 .number-tel{
@@ -629,10 +631,12 @@ body{
 
 .catalog-item{
   width: 340px;
+  height: 438px;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .card-image{
@@ -650,6 +654,12 @@ body{
   color: #000000;
 }
 
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-hotel{
   color: #333333;
   margin: 0;
@@ -657,11 +667,15 @@ body{
 }
 
 .card-price{
+  width: 140px;
   color: #333333;
 }
 
 .card-button{
   background-color: #756157;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
   color: #FFFFFF;
   line-height: 20px;
   font-size: 16px;
@@ -701,8 +715,10 @@ body{
 .pagination{
   width: 1056px;
   margin: 0 auto;
+  padding-top: 96px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pagination-list{
