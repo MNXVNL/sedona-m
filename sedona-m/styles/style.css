@@ -1,10 +1,11 @@
- @font-face {
+@font-face {
   font-family: 'PT Sans';
   src: url(../fonts/ptsans-400.woff2);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'PT Sans';
   src: url(../fonts/ptsans-700.woff2);
@@ -107,18 +108,16 @@ body{
   display: block;
   min-width: 20px;
   min-height: 20px;
-  padding: 23px 12px;
-  background-image: url(../images/icons/search.svg);
-  background-repeat: no-repeat;
+  margin: 23px 12px;
+  background: url(../images/icons/search.svg) no-repeat center center;
 }
 
 .navigation-favorites{
   display: block;
   min-width: 20px;
   min-height: 20px;
-  padding: 23px 12px;
-  background-image: url(../images/icons/favorite.svg);
-  background-repeat: no-repeat;
+  margin: 23px 12px;
+  background: url(../images/icons/favorite.svg) no-repeat center center;
 }
 
 .navigation-button{
@@ -629,10 +628,12 @@ body{
 
 .catalog-item{
   width: 340px;
+  height: 438px;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .card-image{
@@ -650,6 +651,12 @@ body{
   color: #000000;
 }
 
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-hotel{
   color: #333333;
   margin: 0;
@@ -657,11 +664,15 @@ body{
 }
 
 .card-price{
+  width: 140px;
   color: #333333;
 }
 
 .card-button{
   background-color: #756157;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
   color: #FFFFFF;
   line-height: 20px;
   font-size: 16px;
@@ -701,8 +712,10 @@ body{
 .pagination{
   width: 1056px;
   margin: 0 auto;
+  padding-top: 96px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pagination-list{
