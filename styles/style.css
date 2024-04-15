@@ -437,37 +437,39 @@ body{
 }
 
 .footer-list{
-  width: 165px;
+  width: 250px;
   height: 40px;
   display: flex;
-  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.button-vk{
-  display: block;
-  min-width: 24px;
-  min-height: 14px;
-  margin: 0 10px;
-  background: url(../images/social-item/vk.svg) no-repeat center center;
+.footer-item{
+  width: 47px;
+  height: 40px;
+  display: flex;
 }
 
-.button-facebook{
-  display: block;
-  min-width: 18px;
-  min-height: 16px;
-  margin: 0 10px;
-  background: url(../images/social-item/facebook.svg) no-repeat center center;
+.button-social{
+  margin: auto;
 }
 
-.button-youtube{
+.social-icon{
   display: block;
-  min-width: 22px;
-  min-height: 17px;
-  margin: 0 10px;
-  background: url(../images/social-item/youtube.svg) no-repeat center center;
+  fill: #83B3D3;
+}
+
+.social-icon:hover{
+  fill: #68A2CA;
+}
+
+.social-icon:focus{
+  fill: #68A2CA;
+}
+
+.social-icon:active{
+  fill: #68A2CA4D;
 }
 
 .number-tel{
@@ -493,13 +495,24 @@ body{
   display: block;
   width: 115px;
   height: 33px;
-  margin-left: 50px;
+  margin-left: 135px;
+}
+
+.footer-logo-icon{
+  fill: #000000;
 }
 
 .footer-logo-icon:hover{
   fill: #756157;
 }
 
+.footer-logo-icon:focus{
+  fill: #756157;
+}
+
+.footer-logo-icon:active{
+  fill: #7561574D;
+}
 
 
                                        /* каталог */
@@ -822,7 +835,7 @@ body{
 }
 
 .card-button-favorites:focus{
-  /* background-color: #68A2CA; */
+  background-color: #68A2CA;
 }
 
 .card-button-favorites:active{
@@ -843,7 +856,7 @@ body{
 }
 
 .button-favorites-active:focus{
-  /* background-color: #6C9E42; */
+  background-color: #6C9E42;
 }
 
 .button-favorites-active:active{
@@ -906,7 +919,7 @@ body{
 }
 
 .pagination-link:focus{
-  /* background-color: #68A2CA; */
+  background-color: #68A2CA;
 }
 
 .pagination-link:active{
