@@ -46,11 +46,13 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img src="images/icons/mini-home.svg" alt="На главную.">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"/>
+              </svg>
               <span class="visually-hidden">Перейти на главную страницу.</span>
             </a>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-hotel">
             Гостиницы
           </li>
         </ul>
@@ -103,15 +105,25 @@
             <div class="filter-right">
               <fieldset class="filter-price">
                 <legend class="filter-title">Стоимость, ₽:</legend>
-                  <label class="visually-hidden">Поле ввода минимальной стоимости.
-                    <input type="number" min="0" max="9000" value="0" placeholder="от">
-                  </label>
-                  <label class="visually-hidden">Поле ввода максимальной стоимости.
-                    <input type="number" min="0" max="9000" value="9000" placeholder="до">
-                  </label>
-                  <label class="visually-hidden">Ползунок выбора стоимоcти.
+                <div class="range-price">
+                  <label class="visually-hidden" id="field-min">Поле ввода минимальной стоимости.</label>
+                  <input type="text" for="field-min" class="field-price field-price-min" min="0" max="9000" value="0" name="min-price" placeholder="от">
+                  <label class="visually-hidden" id="field-max">Поле ввода максимальной стоимости.</label>
+                  <input type="text" for="field-max" class="field-price field-price-max" min="0" max="9000" value="9000" name="max-price" placeholder="до">
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                  <!-- <label class="visually-hidden">Ползунок выбора стоимоcти.
                     <input type="range" min="0" max="9000" name="#">
-                  </label>
+                  </label> -->
               </fieldset>
               <div class="filter-button">
                 <button class="filter-button-apply" type="submit">Применить</button>
