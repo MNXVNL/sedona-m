@@ -546,6 +546,7 @@ body{
   width: 111px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   list-style-type: none;
   padding-top: 10px;
@@ -553,14 +554,25 @@ body{
   margin: 0;
 }
 
-.breadcrumbs-item{
+.breadcrumbs-link{
   color: #FFFFFF;
   font-size: 16px;
   text-decoration: none;
 }
 
-.breadcrumbs-hotel{
-  margin-left: 25px;
+.breadcrumbs-link:hover{
+  color: #FFFFFF99;
+}
+
+.breadcrumbs-link:active{
+  color: #FFFFFF4D;
+}
+
+.breadcrumbs-arrow{
+  width: 6px;
+  height: 9px;
+  background-image: url(/images/icons/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
 }
 
 .filter-form{
@@ -654,7 +666,6 @@ body{
   width: 288px;
   border-bottom: 4px solid #FFFFFF4D;
   margin-top: 32px;
-  /* opacity: 30%; */
 }
 
 .range-bar{
@@ -696,7 +707,6 @@ body{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* margin-top: 50px; */
   justify-content: flex-end;
   align-items: center;
 }
@@ -777,47 +787,87 @@ body{
   margin-right: 190px;
 }
 
+.select-wrapper{
+  position: relative;
+}
+
+.select-wrapper::before{
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 18px;
+  width: 12px;
+  height: 7px;
+  background-image: url(/images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
 .select{
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   width: 290px;
   height: 49px;
+  padding-left: 18px;
   box-sizing: border-box;
-  margin-right: 70px;
-}
-
-.select-option{
-  font-size: 18px;    /*  непонятки с размером шрифта, меняю в CSS в браузере ничего не происходит */
+  font-family: PT Sans, sans-serif;
   line-height: 21px;
+  font-size: 18px;
   color: #333333;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
 }
 
-.sorting-view{
-  width: 48px;
-  height: 48px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  box-sizing: border-box;
-  display: flex;
-  margin-left: 8px;
-}
-
-.sorting-view:hover{
-  border-color: #000000;
-}
-
-.sorting-view:focus{
+.select:hover,
+.select:focus{
   border-color: #68A2CA;
 }
 
-.sorting-view:active{
-  border-color: #000000;
+.select:active{
+  border-color: #3F5E72;
+}
+
+.select:disabled{
+  border-color: #FFFFFF99;
+  color: #FFFFFF99;
+}
+
+.sorting-view{
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.sorting-view-link{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .sorting-view-icon{
   display: block;
   margin: auto;
 }
+
+.sorting-view-link:hover{
+  border-color: #000000;
+}
+
+.sorting-view-link:focus{
+  border-color: #68A2CA;
+}
+
+.sorting-view-link:active{
+  border-color: #000000;
+}
+
+
 
 .catalog-hotel{
   width: 1056px;
