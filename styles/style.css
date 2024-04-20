@@ -15,12 +15,12 @@
 }
 
 html{
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   height: 100%;
 }
 
 body{
-  width: 1280px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -31,6 +31,7 @@ body{
   color: #000000;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0 0 15px 0 #00000033;
 }
 
 .visually-hidden{
@@ -162,8 +163,6 @@ body{
   width: 1200px;
   margin: -5px auto 0;
   background-color: #FFFFFF;
-  /* box-shadow: 10px 10px 30px #E6E6E6, */
-  /* -5px 5px 50px #E6E6E6; */
 }
 
 .hero{
@@ -180,23 +179,25 @@ body{
 }
 
 .footer-hero{
-  min-height: 282px;
-  text-align: center;
   padding-top: 63px;
+  padding-bottom: 90px;
 }
 
-.footer-hero h1{
+.footer-hero-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
 
-.footer-hero p{
+.footer-hero-text{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 31px 0 0;
+  text-align: center;
+  margin: 0;
 }
 
 .advantages{
@@ -280,33 +281,31 @@ body{
 
 .search{
   width: 1200px;
-  min-height: 417px;
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
-.search h2{
+.search-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 91px;
-  padding-bottom: 29px;
+  margin-top: 0;
+  margin-bottom: 29px;
 }
 
-.search p{
+.search-text{
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  margin: 0;
-  padding-bottom: 56px;
+  margin-top: 0;
+  margin-bottom: 56px;
 }
 
 .search-button{
   display: block;
   width: 574px;
   height: 60px;
-  margin: 0 auto;
-  padding: 0;
   border-style: none;
   border-radius: 4px;
   font-family: 'PT Sans', sans-serif;
@@ -317,6 +316,8 @@ body{
   text-transform: uppercase;
   background-color: #756157;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .search-button:hover{
@@ -337,12 +338,11 @@ body{
 }
 
 .subscribe{
-  height: 411px;
   background-color: #83B3D333;
   background-image: url(/images/background/subscribe-background.jpg);
   background-repeat: no-repeat;
-  text-align: center;
-  /* border-bottom: 1px solid #E6E6E6; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .subscribe-title{
@@ -350,17 +350,18 @@ body{
   line-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin: 0;
-  padding: 94px 0 29px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 29px;
 }
 
 .subscribe-text{
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 46px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .subscribe-form{
@@ -423,17 +424,13 @@ body{
 
 .main-footer{
   width: 1200px;
-  margin: 0 auto;
+  box-sizing: border-box;
   background-color: #FFFFFF;
-}
-
-.footer-container{
-  width: 1060px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 30px;
+  padding: 40px 70px 30px;
+  margin: 0 auto;
 }
 
 .footer-list{
@@ -523,35 +520,30 @@ body{
 }
 
 .filter{                       /*  1  секция   */
-  width: 1200px;
-  height: 403px;
   background-color: #83B3D333;
   background-image: url(../images/background/background-inner.jpg);
   background-repeat: no-repeat;
-}
-
-.filter-header{
-  padding-top: 35px;
-  padding-left: 70px;
+  padding: 35px 70px 70px;
 }
 
 .filter-header-title{
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs{
-  width: 111px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
   list-style-type: none;
-  padding-top: 10px;
-  padding-left: 2px;
-  margin: 0;
+  padding: 0;
+  /* padding-left: 2px; */
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link{
@@ -578,9 +570,6 @@ body{
 .filter-form{
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 .filter-left{
@@ -600,7 +589,7 @@ body{
   font-weight: 700;
   color: #FFFFFF;
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .filter-list{
@@ -769,14 +758,14 @@ body{
 .catalog{                               /*    2  секция*/
   width: 1200px;
   background-color: #FFFFFF;
+  padding-top: 50px;
 }
 
 .sorting{
   width: 1056px;
-  margin: 0 auto;
+  margin: 0 auto 56px;
   display: flex;
   align-items: center;
-  padding-top: 50px;
 }
 
 .sorting-title{
@@ -867,11 +856,9 @@ body{
   border-color: #000000;
 }
 
-
-
 .catalog-hotel{
   width: 1056px;
-  margin: 56px auto 0;
+  margin: 0 auto 96px;
 }
 
 .catalog-list{
@@ -939,12 +926,9 @@ body{
   text-align: center;
 }
 
-.card-button:hover{
-  background-color: #615048;
-}
-
+.card-button:hover,
 .card-button:focus{
-  /* background-color: #615048; */
+  background-color: #615048;
 }
 
 .card-button:active{
@@ -1024,9 +1008,7 @@ body{
 .pagination{
   width: 1056px;
   margin: 0 auto;
-  padding-top: 96px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -1037,6 +1019,7 @@ body{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-right: 270px;
 }
 
 .pagination-link{
@@ -1091,22 +1074,16 @@ body{
 
 .pagination-text{
   color: #333333;
+  margin-right: 51px;
 }
 
 .pagination-select{
-  color: #333333;
-  font-size: 18px;
-  line-height: 21px;
   width: 160px;
-  height: 49px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
 }
 
 .subscribe-inner{                             /*  3 секция   Подпишитесь на расылку  */
-  min-height: 411px;
-  text-align: center;
   background-color: #FFFFFF;
+  background-image: none;
 }
 
 .subscribe-title-inner{
