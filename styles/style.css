@@ -603,6 +603,24 @@ body{
 }
 
 .control{
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-span{
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+}
+
+.control-chekbox{
+  border-radius: 4px;
+}
+
+.control-label{
   color: #FFFFFF;
 }
 
@@ -610,6 +628,10 @@ body{
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.control-radio{
+  border-radius: 50%;
 }
 
 .filter-right{
