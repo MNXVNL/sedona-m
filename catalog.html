@@ -121,9 +121,9 @@
               <legend class="filter-title">Стоимость, ₽:</legend>
               <div class="range-price">
                 <label class="visually-hidden" id="field-min">Поле ввода минимальной стоимости.</label>
-                <input type="text" for="field-min" class="field-price field-price-min" min="0" max="9000" value="0" name="min-price" placeholder="от">
+                <input type="number" for="field-min" class="field-price field-price-min" min="0" max="9000" value="0" name="min-price" placeholder="от">
                 <label class="visually-hidden" id="field-max">Поле ввода максимальной стоимости.</label>
-                <input type="text" for="field-max" class="field-price field-price-max" min="0" max="9000" value="9000" name="max-price" placeholder="до">
+                <input type="number" for="field-max" class="field-price field-price-max" min="0" max="9000" value="9000" name="max-price" placeholder="до">
               </div>
               <div class="range-scale">
                 <div class="range-bar">
@@ -156,15 +156,15 @@
         </div>
         <div class="sorting-view">
           <a class="sorting-view-link" href="#">
-            <img class="sorting-view-icon" src="images/icons/icon-table.svg" alt="Вид:таблицей." width="16px" height="14px">
+            <img class="sorting-view-icon" src="images/view/table.svg" alt="Вид:таблицей." width="16px" height="14px">
             <span class="visually-hidden">Показать таблицей.</span>
           </a>
           <a class="sorting-view-link" href="#">
-            <img class="sorting-view-icon" src="images/icons/icon-slideshow.svg" alt="Вид:слайдами." width="16px" height="14px">
+            <img class="sorting-view-icon" src="images/view/slideshow.svg" alt="Вид:слайдами." width="16px" height="14px">
             <span class="visually-hidden">Показать слайдами.</span>
           </a>
           <a class="sorting-view-link" href="#">
-            <img class="sorting-view-icon" src="images/icons/icon-list.svg" alt="Вид:списком." width="16px" height="14px">
+            <img class="sorting-view-icon" src="images/view/list.svg" alt="Вид:списком." width="16px" height="14px">
             <span class="visually-hidden">Показать списком.</span>
           </a>
         </div>
@@ -172,7 +172,7 @@
       <div class="catalog-hotel">                                                          <!-- 2.2 каталог(карточки отелей) -->
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a href="#"><img class="card-image" src="images/hotels/hotel-1.jpg" width="300" height="211" alt="Красивый вид в окрестностях Amara Resort & Spa."></a>
+            <a href="#"><img class="card-image" src="images/card/hotel-1.jpg" width="300" height="211" alt="Красивый вид в окрестностях Amara Resort & Spa."></a>
             <h3 class="card-title"><a href="#">Amara Resort & Spa</a></h3>
             <div class="card-container">
               <p class="card-hotel">Гостиница</p>
@@ -186,12 +186,15 @@
                 <span class="button-favorites-text">В избранное</span>
               </button>
             </div>
-            <span class="card-button card-rating">
-              <b class="card-rating-text">Рейтинг: 8,5</b>
-            </span>
+            <div class="card-container">
+              <img class="hotel-star" src="/images/card/4stars.svg" alt="четыре звезды.">
+              <span class="card-button card-rating">
+                <b class="card-rating-text">Рейтинг: 8,5</b>
+              </span>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#"><img class="card-image" src="images/hotels/hotel-2.jpg" width="300" height="211" alt="Красивый вид в окрестностях Villas at Poco Diablo."></a>
+            <a href="#"><img class="card-image" src="images/card/hotel-2.jpg" width="300" height="211" alt="Красивый вид в окрестностях Villas at Poco Diablo."></a>
             <h3 class="card-title"><a href="#">Villas at Poco Diablo</a></h3>
             <div class="card-container">
               <p class="card-hotel">Гостиница</p>
@@ -205,12 +208,15 @@
                 <span class="button-favorites-text">В избранном</span>
               </button>
             </div>
-            <span class="card-button card-rating">
-              <b class="card-rating-text">Рейтинг: 9,2</b>
-            </span>
+            <div class="card-container">
+              <img class="hotel-star" src="/images/card/4stars.svg" alt="четыре звезды.">
+              <span class="card-button card-rating">
+                <b class="card-rating-text">Рейтинг: 9,2</b>
+              </span>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#"><img class="card-image" src="images/hotels/hotel-3.jpg" width="300" height="211" alt="Красивый вид в окрестностях Desert Quail Inn."></a>
+            <a href="#"><img class="card-image" src="images/card/hotel-3.jpg" width="300" height="211" alt="Красивый вид в окрестностях Desert Quail Inn."></a>
             <h3 class="card-title"><a href="#">Desert Quail Inn</a></h3>
             <div class="card-container">
               <p class="card-hotel">Гостиница</p>
@@ -224,12 +230,15 @@
                 <span class="button-favorites-text">В избранное</span>
               </button>
             </div>
-            <span class="card-button card-rating">
-              <b class="card-rating-text">Рейтинг: 6,9</b>
-            </span>
+            <div class="card-container">
+              <img class="hotel-star" src="/images/card/3stars.svg" alt="три звезды.">
+              <span class="card-button card-rating">
+                <b class="card-rating-text">Рейтинг: 6,9</b>
+              </span>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#"><img class="card-image" src="images/hotels/hotel-4.jpg" width="300" height="211" alt="Красивый вид в окрестностях GreenTree Inn."></a>
+            <a href="#"><img class="card-image" src="images/card/hotel-4.jpg" width="300" height="211" alt="Красивый вид в окрестностях GreenTree Inn."></a>
             <h3 class="card-title"><a href="#">GreenTree Inn</a></h3>
             <div class="card-container">
               <p class="card-hotel">Гостиница</p>
@@ -243,9 +252,12 @@
                 <span class="button-favorites-text">В избранное</span>
               </button>
             </div>
-            <span class="card-button card-rating">
-              <b class="card-rating-text">Рейтинг: 5,0</b>
-            </span>
+            <div class="card-container">
+              <img class="hotel-star" src="/images/card/2stars.svg" alt="две звезды.">
+              <span class="card-button card-rating">
+                <b class="card-rating-text">Рейтинг: 5,0</b>
+              </span>
+            </div>
           </li>
         </ul>
       </div>

@@ -334,10 +334,7 @@ body{
   padding: 0;
 }
 
-.search-button:hover{
-  background-color: #615048;
-}
-
+.search-button:hover,
 .search-button:focus{
   background-color: #615048;
 }
@@ -419,10 +416,7 @@ body{
   cursor: pointer;
 }
 
-.subscribe-button:hover{
-  background-color: #68A2CA;
-}
-
+.subscribe-button:hover,
 .subscribe-button:focus{
   background-color: #68A2CA;
 }
@@ -456,25 +450,19 @@ body{
   padding: 0;
 }
 
-.footer-item{
+.button-social{
   width: 47px;
   height: 40px;
   display: flex;
 }
 
-.button-social{
-  margin: auto;
-}
-
 .social-icon{
   display: block;
   fill: #83B3D3;
+  margin: auto;
 }
 
-.social-icon:hover{
-  fill: #68A2CA;
-}
-
+.social-icon:hover,
 .social-icon:focus{
   fill: #68A2CA;
 }
@@ -494,10 +482,6 @@ body{
   color: #756157;
 }
 
-.number-tel:focus{
-  color: #756157;
-}
-
 .number-tel:active{
   color: #7561574D;
 }
@@ -514,10 +498,6 @@ body{
 }
 
 .footer-logo-icon:hover{
-  fill: #756157;
-}
-
-.footer-logo-icon:focus{
   fill: #756157;
 }
 
@@ -1102,9 +1082,12 @@ body{
   background-color: #E5E5E5;
 }
 
+.hotel-star{
+  display: block;
+}
+
 .card-rating{
   background-color: #F2F2F2;
-  margin-left: auto;
 }
 
 .card-rating-text{
