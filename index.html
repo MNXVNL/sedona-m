@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles/style.css">
     <title>Sedona</title>
-    
+
   </head>
   <body>
     <header class="main-header">
@@ -192,5 +192,38 @@
         </div>
       </div>
     </footer>
+    <div class="modale-container">
+      <div class="modale-auth">
+        <button class="modale-button-close">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modale-content">
+          <h2 class="modale-title">Поиск гостиницы в Седоне</h2>
+          <form class="modale-form">
+            <label class="modale-label">
+              <span class="modale-text">Дата Заезда:</span>
+              <input class="modale-input modale-input-date" type="date">
+            </label>
+            <label class="modale-label">
+              <span class="modale-text">Дата Выезда:</span>
+              <input class="modale-input modale-input-date" type="date">
+            </label>
+            <div class="modale-age">
+              <label class="modale-label">
+                <span class="modale-text modale-text-adults">Взрослые:</span>
+                <input class="modale-input modale-input-number" type="number">
+              </label>
+              <label class="modale-label">
+                <span class="modale-text modale-text-child">Дети:</span>
+                <input class="modale-input modale-input-number" type="number">
+              </label>
+            </div>
+            <button class="modale-button-form" type="submit">
+              <span class="modale-button-text">Найти</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
