@@ -554,7 +554,6 @@ body{
 .modale-form{
   display: flex;
   flex-direction: column;
-  gap: 52px;
 }
 
 .modale-label{
@@ -562,6 +561,7 @@ body{
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .modale-text{
@@ -578,27 +578,21 @@ body{
   margin-right: 43px;
 }
 
-.modale-input{
+.modale-input-date{
+  width: 420px;
   height: 50px;
   border-radius: 4px;
   border-style: none;
   background-color: #F2F2F2;
-  margin-left: auto;
-  appearance: none;
+  padding: 0;
 }
 
-.modale-input-date{
-  width: 420px;
-  appearance: none;
-}
-
-.arrival::before{
-  content: 'Мы не можем отправить вас в прошлое.';
-  position: absolute;
-  top: 60px;
-  font-size: 16px;
+.modale-input-date::placeholder{
+  font-family: inherit;
+  font-size: 18px;
   line-height: 21px;
-  color: #FF5757;
+  color: #000000;
+  padding-left: 19px;
 }
 
 .modale-age{
@@ -608,7 +602,44 @@ body{
 
 .modale-input-number{
   width: 133px;
+  height: 50px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #F2F2F2;
+  padding: 0;
+  position: relative;
+cursor: ne-resize;
 }
+
+.modale-input-number::placeholder{
+  font-size: 18px;
+  line-height: 21px;
+  font-family: inherit;
+  color: #000000;
+  text-align: center;
+}
+
+.modale-button-minus{
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: #F2F2F2;
+  position: absolute;
+  left: 168px;
+  z-index: 1;
+  background-image: url(/images/modale/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.modale-button-minus:hover{
+  opacity: 1;
+}
+
+
 
 .modale-button-form{
   width: 575px;
@@ -758,7 +789,7 @@ body{
 .control-input:focus +
 .control-checkbox{
   background-color: #FFFFFF99;
-  box-shadow: 0px 0px 0px 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .control-text{
@@ -806,7 +837,7 @@ body{
 
 .control-input:focus +
 .control-radio{
-  box-shadow: 0px 0px 0px 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .control-input:active +
@@ -956,7 +987,7 @@ body{
 
 .filter-button-reset:focus{
   outline: none;
-  box-shadow: 0px 0px 0px 3px #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .catalog{                               /*    2  секция*/
