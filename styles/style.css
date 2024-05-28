@@ -561,6 +561,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .modale-text{
@@ -583,10 +584,21 @@ body{
   border-style: none;
   background-color: #F2F2F2;
   margin-left: auto;
+  appearance: none;
 }
 
 .modale-input-date{
   width: 420px;
+  appearance: none;
+}
+
+.arrival::before{
+  content: 'Мы не можем отправить вас в прошлое.';
+  position: absolute;
+  top: 60px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
 }
 
 .modale-age{
