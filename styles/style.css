@@ -505,7 +505,7 @@ body{
   fill: #7561574D;
 }
 
-.modale-container{
+.modale-window{
   position: fixed;
   display: flex;
   width: 100%;
@@ -533,15 +533,18 @@ body{
   border-radius: 50%;
   border: 0;
   outline: 0;
-  background-color: #F2F2F2;
+  padding: 0;
   position: absolute;
   top: 54px;
   right: 70px;
-  background-image: url(/images/modale/close.svg);
-  background-repeat: no-repeat;
-  background-size: 13px 13px;
-  background-position: center center;
   cursor: pointer;
+  background-color: #F2F2F2;
+}
+
+
+.esc{
+  fill: #000000;
+
 }
 
 .modale-button-close:hover{
@@ -553,9 +556,23 @@ body{
   outline: 3px solid #83B3D3;
 }
 
-/* .modale-button-close:active{
+.modale-button-close:active{
+  background-color: #E6E6E6;
+}
 
-} */
+.modale-button-close:active .esc{
+  fill: #0000004D;
+}
+
+.modale-container{
+  width: 133px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .modale-title{
   font-size: 30px;
@@ -574,8 +591,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .modale-text{
@@ -601,6 +618,7 @@ body{
   background-color: #F2F2F2;
   padding: 0;
   cursor: pointer;
+  /* position: relative; */
 }
 
 .modale-input-date::placeholder{
@@ -627,23 +645,33 @@ body{
 
 .calendar{
   position: absolute;
-  right: 19px;
+  right: 20px;
   opacity: 0.3;
+}
+
+.message{
+  position: absolute;
+  top: 55px;
+  left: 155px;
+  font-size: 16px;
+}
+
+.error{
+  color: #FF5757;
 }
 
 .modale-age{
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 .modale-input-number{
-  width: 133px;
+  width: 70px;
   height: 50px;
-  border-radius: 4px;
-  border-style: none;
-  background-color: #F2F2F2;
+  border: 0;
+  outline: 0;
   padding: 0;
+  background-color: transparent;
   cursor: default;
 }
 
@@ -661,39 +689,22 @@ body{
   border-radius: 4px;
   border: 0;
   outline: 0;
+  padding: 0;
   cursor: pointer;
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
   opacity: 0.3;
-}
-
-.button-minus-adults{
-  position: absolute;
-  left: 173px;
-}
-
-.button-plus-adults{
-  position: absolute;
-  right: 19px;
-}
-
-.button-minus-child{
-  position: absolute;
-  left: 111px;
-}
-
-.button-plus-child{
-  position: absolute;
-  right: 19px;
+  position: relative;
 }
 
 .minus{
   position: absolute;
-  transform: translate(-6px, -1px);
+  left: 6px;
 }
 
 .plus{
   position: absolute;
-  transform: translate(-6px, -6px);
+  left: 6px;
+  top: 6px;
 }
 
 .modale-button:hover{
@@ -701,8 +712,8 @@ body{
 }
 
 .modale-button:focus-visible{
-  border: 3px solid #83B3D3;
-  box-sizing: border-box;
+  outline: 3px solid #83B3D3;
+  opacity: 1;
 }
 
 .modale-button:active{
@@ -715,6 +726,7 @@ body{
   border-radius: 10px;
   border: 0;
   outline: 0;
+  padding: 0;
   background-color: #83B3D3;
   display: flex;
   cursor: pointer;
